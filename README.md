@@ -6,8 +6,16 @@
 | Gallant Damas Hayuaji         | 5027231037 |
 | Danar Bagus Rasendriya        | 5027231055 |
 
-#### Soal 1 Advance Sanity Check
+#### Advance Sanity Check
 ![image](https://github.com/user-attachments/assets/cd807fba-bbf3-4ed7-9d9b-4e8d97c2f5ea)
+
+Apa username pengirim? ```JaneD03```.
+
+Untuk menemukan username, berikut adalah proses filternya menggunakan ```http.request.method == "POST"``` lalu follow paket berikut
+
+![image](https://github.com/user-attachments/assets/a678f5a6-9d02-4ee2-bb2f-4520e90b8a4a)
+
+![image](https://github.com/user-attachments/assets/5c1114ed-7d89-42e4-8cd6-8fb5e1b43663)
 
 Apa Nama File yang dikirim? ```Clue3.txt```. Didapatkan dari filter "http"
 
@@ -28,3 +36,6 @@ Text tersebut perlu di-decode dengan Base64, menjadi seperti berikut:
 Menjadi jawaban pertanyaan 
 Ikuti petunjuk untuk mendapatkan pesan rahasia. Kemudian flag didapatkan
 Flag: JarkomIT{8uK4n_S4n1ty_b1a5A_fQe1rmHCeu1QqtJM6Xq5jTuJ9Su5BTWwLQd0qPjRxfveVtS3O8h0UIKK}
+
+### Pegawai Negeri Sebelah
+![Screenshot (248)](https://github.com/user-attachments/assets/f16424d4-f5b8-4683-867f-ff87e3a0ca29)
