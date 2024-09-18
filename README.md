@@ -51,3 +51,38 @@ Setelah itu membuka file di excel dan memasukkan sesuai kebutuhan pertanyaan.
 ![image](https://github.com/user-attachments/assets/bd5dcfb6-3a2e-4eb0-8c39-8943fcb6a27e)
 
 Flag: JarkomIT{Tum8eN_p45SnYa_Ku4t_B1aS4Nya_X27HTdzty5QRXrCJPeXTXOfSEL37jegV6lQaModIofD8iGf6fTRmM4h}
+
+### FTP Login
+![image](https://github.com/user-attachments/assets/480f85df-107e-4977-9047-7a110f7ac35a)\
+
+Apa username yang berhasil digunakan untuk login? ```sn34ky``` . Ini didapatkan dengan cara filter ```ftp.response.code == 230``` untuk menemukan yang berhasil, karena 230 menunjukkan login success.
+
+![image](https://github.com/user-attachments/assets/ea9a95ae-5737-4e18-9e0f-622e09b3feee)
+
+![image](https://github.com/user-attachments/assets/571ebdab-81ad-4e80-ada1-c536d2c96430)
+
+Lalu ditemukan password ```sup3rsn1ff3r```. Kemudian flag ditemukan
+
+### Surprise
+![image](https://github.com/user-attachments/assets/ac9c8617-eb8b-4d35-a779-d0479af0f199)
+
+Langkah pertama adalah filtering untuk menemukan nama service yang digunakan sebagai berikut
+
+![image](https://github.com/user-attachments/assets/f6c8fe80-15c6-44d6-89c6-b15302ef082a)
+
+Lalu mencari nama file dengan filter sebagai berikut
+
+![image](https://github.com/user-attachments/assets/f92aeb97-ab40-4055-b678-1cc0b237c1b6)
+
+Untuk menemukan pesan rahasia, saya membuka file ```.cpp``` yang ada dan menemukan kumpulan angka sebagai berikut.
+
+![image](https://github.com/user-attachments/assets/a273d69b-b988-406f-9ef4-f029b7d9a02a)
+
+Angka tersebut perlu dikonversi dari ASCII menjadi text dan didapatkan hasil berikut ini:
+
+![Screenshot 2024-09-18 205750](https://github.com/user-attachments/assets/ef2ba6fb-2507-4d8d-9a74-b13896e68e70)
+
+Sebelumnya saya mengalami beberapa kendala karena salah memasukkan pesan (terdapat ```spasi``` yang membuat salah).
+
+![image](https://github.com/user-attachments/assets/0c3f6953-906c-4139-9be0-032455175444)
+
