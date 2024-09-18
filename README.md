@@ -126,14 +126,23 @@ Setelah itu saya input email dan password ke dalam pertanyaan nc, lalu saya mend
 
 ### Soal EZ
 
+Flag yang didapat:
+
 ![Screenshot 2024-09-18 at 20 07 24](https://github.com/user-attachments/assets/ce9a4889-ef7c-450c-9947-c4ac84d0b2a2)
+
+Pertanyaan 1: saya dapat dari membuka beberapa file yang menurut saya "berbeda"
 
 ![Screenshot 2024-09-19 at 01 52 57](https://github.com/user-attachments/assets/c171d8c8-2212-41ec-8f88-293329901a29)
 
+Lalu saya mendapat:
+
 ![Screenshot 2024-09-18 at 20 05 56](https://github.com/user-attachments/assets/8bf6f01f-236b-41a7-b34b-d5ea12d633e0)
+
+Lalu saya cek port dari packet yang saya follow, saya dapatkan nomor port nya:
 
 ![Screenshot 2024-09-18 at 20 07 24](https://github.com/user-attachments/assets/72a9c8da-19a6-4cf6-b5a1-bb2e9f698d3f)
 
+Flag pun didapatkan 
 
 
 
