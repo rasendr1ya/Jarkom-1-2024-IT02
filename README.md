@@ -39,3 +39,15 @@ Flag: JarkomIT{8uK4n_S4n1ty_b1a5A_fQe1rmHCeu1QqtJM6Xq5jTuJ9Su5BTWwLQd0qPjRxfveVt
 
 ### Pegawai Negeri Sebelah
 ![Screenshot (248)](https://github.com/user-attachments/assets/f16424d4-f5b8-4683-867f-ff87e3a0ca29)
+
+Pertama kita mencari nama file dan ditemukan ```data_pns.csv```. File ini akan diexport dan nanti bisa dibaca isinya lewat excel.
+
+![image](https://github.com/user-attachments/assets/0b491208-3dbc-456b-8544-cab85ae589a8)
+
+![image](https://github.com/user-attachments/assets/109fef1b-1a5e-49a4-b1fe-2bb4828748fd)
+
+Setelah itu membuka file di excel dan memasukkan sesuai kebutuhan pertanyaan.
+
+![image](https://github.com/user-attachments/assets/bd5dcfb6-3a2e-4eb0-8c39-8943fcb6a27e)
+
+Flag: JarkomIT{Tum8eN_p45SnYa_Ku4t_B1aS4Nya_X27HTdzty5QRXrCJPeXTXOfSEL37jegV6lQaModIofD8iGf6fTRmM4h}
