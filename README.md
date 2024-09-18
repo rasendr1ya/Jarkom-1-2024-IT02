@@ -86,3 +86,51 @@ Sebelumnya saya mengalami beberapa kendala karena salah memasukkan pesan (terdap
 
 ![image](https://github.com/user-attachments/assets/0c3f6953-906c-4139-9be0-032455175444)
 
+### Corporate Breach
+
+Flag yang didapat:
+
+![Screenshot 2024-09-18 at 20 37 20](https://github.com/user-attachments/assets/0ae967a5-f931-4014-9752-6f591ceb6f73)
+
+Pertama saya masuk ke nc soal ini.
+
+Lalu ada pertanyaan:
+
+![image](https://github.com/user-attachments/assets/79110f20-21b5-4298-8962-696d3bd63fbe)
+
+Jawaban: Nakhimov
+
+Saya mendapat jawaban itu dengan melakukan follow-http stream terhadap packet:
+
+![Screenshot 2024-09-19 at 01 35 16](https://github.com/user-attachments/assets/4f1196d8-b8a8-46dd-b5d1-773b13e14535)
+
+Yang menunjukkan string seperti ini:
+
+![Screenshot 2024-09-18 at 20 20 53](https://github.com/user-attachments/assets/f4114fae-5db2-4aa4-8617-93fe481e6efe)
+
+Selanjutnya muncul pertanyaan ke-2:
+
+![Screenshot 2024-09-18 at 20 37 20](https://github.com/user-attachments/assets/4c4832ca-6c25-4173-9284-33ff995d8e2a)
+
+Saya melakukan filtering:
+
+![Screenshot 2024-09-19 at 01 35 16](https://github.com/user-attachments/assets/94ef7bbf-37d1-4fe2-a779-bdc599473519)
+
+Saya cek beberapa packet HTTP dengan info POST dan index.php HTTP/1.1
+
+Lalu saya mendapati email dan password:
+
+![Screenshot 2024-09-18 at 20 36 42](https://github.com/user-attachments/assets/984ad809-c3d5-4a27-ae1e-eca7cf458bc4)
+
+Setelah itu saya input email dan password ke dalam pertanyaan nc, lalu saya mendapatkan flag: JarkomIT{supp0rt_k0k_l3m4h_bg_knHDj2iRrQWdXNOuGb7Mm8EZ6G6HMjbdH7CSz0iuPfDdzUi6iejBG6}
+
+
+
+
+
+
+
+
+
+
+
