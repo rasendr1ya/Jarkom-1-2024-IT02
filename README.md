@@ -144,15 +144,29 @@ Lalu saya cek port dari packet yang saya follow, saya dapatkan nomor port nya:
 
 Flag pun didapatkan 
 
+-----------------------------------------------------------
+## Pengerjaan Revisi Modul 1
+### Soal Illegal Breakthrough
 
+![image](https://github.com/user-attachments/assets/47d9a04b-8a92-4140-8229-787bba15cd69)
+![image](https://github.com/user-attachments/assets/ebaa57f5-fe76-48c9-a818-f11b7755d897)
+![image](https://github.com/user-attachments/assets/530ab2b0-b1f6-4cf5-90d6-01106729b4db)
 
+Apa IP Address dari korban? ```172.21.88.207```. Caranya adalah dengan mengecek destination. Di sini dicurigai karena banyak IP yang sama dan waktu yang berdekatan.
 
+![image](https://github.com/user-attachments/assets/d9f2b99e-f106-4ed5-9857-f38a4203d7b7)
 
+Apa port yang digunakan sebagai webserver? ```1917```. Caranya adalah dengan mengecek destination port di bawah.
 
+![image](https://github.com/user-attachments/assets/7a5405ad-d0d3-45e9-b2aa-aa4f1266c531)
 
+Dimana endpoint yang terdapat login? ```/ww1.php```. Dengan cara filtering menggunakan ```frame contains "POST"``` lalu melakukan follow HTTP.
 
+![image](https://github.com/user-attachments/assets/8460101f-408b-445e-8c5c-11abc7a2cc08)
 
+Tools apa yang digunakan oleh attacker? ```ffuf-v2.1.0-dev```. Nama asli dari tools bisa ditemukan bersamaan dengan endpoint di atas. Nama tools ```Fuzz Faster U Fool```, tetapi di sini perlu disingkat.
 
+Apa Kredensial yang berhasil digunakan oleh attacker untuk login? ```Redbaron:fly1ng4c3```. Untuk menemukannya bisa menggunakan filter ```frame contains "password"```
 
-
-
+![image](https://github.com/user-attachments/assets/c09a46bd-1560-4e3c-95a5-2490d2d0ebe2)
+![image](https://github.com/user-attachments/assets/6ef6c9ec-576b-4a13-ac12-3e9a3792cc9f)
