@@ -170,3 +170,7 @@ Apa Kredensial yang berhasil digunakan oleh attacker untuk login? ```Redbaron:fl
 
 ![image](https://github.com/user-attachments/assets/c09a46bd-1560-4e3c-95a5-2490d2d0ebe2)
 ![image](https://github.com/user-attachments/assets/6ef6c9ec-576b-4a13-ac12-3e9a3792cc9f)
+
+Flag: ```JarkomIT{d34th_fr0m_th3_sky_gnavhIKKBQrJEfvUIfmkReZOCH1aR8ZIwidUScBKcbmxCdRONEXLWW1}```
+
+### Soal 
