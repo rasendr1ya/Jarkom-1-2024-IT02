@@ -173,4 +173,28 @@ Apa Kredensial yang berhasil digunakan oleh attacker untuk login? ```Redbaron:fl
 
 Flag: ```JarkomIT{d34th_fr0m_th3_sky_gnavhIKKBQrJEfvUIfmkReZOCH1aR8ZIwidUScBKcbmxCdRONEXLWW1}```
 
-### Soal 
+### Soal Packets Barrage
+![image](https://github.com/user-attachments/assets/1f168e47-04ba-47c1-b728-ac0014b6fbb0)
+![image](https://github.com/user-attachments/assets/a296faee-93fa-4c54-9781-3efca9a8813a)
+![image](https://github.com/user-attachments/assets/68e6bf78-74ad-44c3-a529-8d7c413236d3)
+![image](https://github.com/user-attachments/assets/2299c59b-1b21-4efa-b4c2-5919908fa248)
+
+Apa IP address dari attacker? ```172.21.80.1```. Melakukan filtering ```http``` dan melihat IP yang menuju ke korban.
+
+![image](https://github.com/user-attachments/assets/86a9dce6-037c-4959-b633-0590b545b8d3)
+
+Berapa total attempt dari bruteforce attacker? ```1917```. Filtering response ```ip.dst == 172.21.88.207 && http.request.method == "POST"``` yang mengarah ke IP korban.
+
+![image](https://github.com/user-attachments/assets/96d8fdb8-8cba-4d87-a13f-18287fc82939)
+![image](https://github.com/user-attachments/assets/796dab61-1d6d-4abc-aaa5-7c44a1099b20)
+
+Apa nama file yang didownload oleh attacker setelah berhasil login ```Albatros.txt```. Filter ```ip.src == 172.21.80.1 && http.request.method == "GET"``` untuk melihat request ```GET``` yang dilakukan attacker. Lalu follow HTTP stream pada paket.
+
+![image](https://github.com/user-attachments/assets/f9b34cb8-c3e7-4eac-906f-8766833c330f)
+![image](https://github.com/user-attachments/assets/32a80427-9d17-44e1-9aa2-ee9a5df4252d)
+
+Apa isi dari file yang disisipkan oleh attacker? ```Der Rote Kampfflieger```. Membuka file ```break.pcapng``` di Visual Studio Code dan mencari Albatros.
+
+![image](https://github.com/user-attachments/assets/98c259af-30da-4d49-8132-19a1adf71561)
+
+Flag: JarkomIT{th3_fly1ng_c1rcus_0f_w4r_gownfDVvIIiaBPo1fFhviboDH5StXEHd7pnMuDlkxgdZgnsxELzzjACE}
