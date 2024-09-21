@@ -198,3 +198,21 @@ Apa isi dari file yang disisipkan oleh attacker? ```Der Rote Kampfflieger```. Me
 ![image](https://github.com/user-attachments/assets/98c259af-30da-4d49-8132-19a1adf71561)
 
 Flag: ```JarkomIT{th3_fly1ng_c1rcus_0f_w4r_gownfDVvIIiaBPo1fFhviboDH5StXEHd7pnMuDlkxgdZgnsxELzzjACE}```
+
+### Soal Rizzset
+![image](https://github.com/user-attachments/assets/31c2d6c4-75d5-4b12-8d5e-fc76ad637bb7)
+![image](https://github.com/user-attachments/assets/3ba771b4-dbc0-4813-9fb4-496ed193658f)
+
+Apa nama domain dari dns query pada log? ```www.its.ac.id```. Filtering sebagai berikut.
+
+![image](https://github.com/user-attachments/assets/473f7e58-5e60-4f06-9016-d0703250d58c)
+
+Berapa ip dari domain tersebut? ```103.94.189.5```. IP bisa ditemukan dengan melakukan ping.
+
+![image](https://github.com/user-attachments/assets/e8efd420-5bbd-43c2-b5a2-bf17d35038e8)
+
+Tuliskan JARM fingerprint yang dihasilkan dari domain tersebut. ```JARM: 2ad2ad16d2ad2ad22c2ad2ad2ad2ad74aaecca9f9c4a3303863dfee62b241e```. Untuk menemukan JARM adalah sebagai berikut:
+
+![image](https://github.com/user-attachments/assets/fce49c32-af1c-4114-99bd-16520096793e)
+
+Flag: ```JarkomIT{Dn5_C0rR34t10n_OxZLHry3QvxnMI5vKZNrgYQ88r1zZANLcX1isAbvTelWoJQjjrbpHH1T5}```
