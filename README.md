@@ -6,6 +6,8 @@
 | Gallant Damas Hayuaji         | 5027231037 |
 | Danar Bagus Rasendriya        | 5027231055 |
 
+***
+
 #### Advance Sanity Check
 ![image](https://github.com/user-attachments/assets/cd807fba-bbf3-4ed7-9d9b-4e8d97c2f5ea)
 
@@ -19,7 +21,7 @@ Untuk menemukan username, berikut adalah proses filternya menggunakan ```http.re
 
 Apa Nama File yang dikirim? ```Clue3.txt```. Didapatkan dari filter "http"
 
-![Screenshot 2024-09-19 004148](https://github.com/user-attachments/assets/df275960-725f-484b-94fc-1ef777b31930)
+![image](https://github.com/user-attachments/assets/df275960-725f-484b-94fc-1ef777b31930)
 
 lalu follow HTTP Stream dan ditemukan file Clue3.txt
 
@@ -29,13 +31,15 @@ Lalu mengikuti petunjuk pada ppt peraturan praktikum dan menemukan text berikut 
 
 ![image](https://github.com/user-attachments/assets/103c0b23-973f-4c60-a825-c37de4635f90)
 
-Text tersebut perlu di-decode dengan Base64, menjadi seperti berikut:
+Text tersebut perlu di-decode dengan `Base64`, menjadi seperti berikut:
 
 ![image](https://github.com/user-attachments/assets/887ea428-775c-490a-9cc6-53d61568e198)
 
-Menjadi jawaban pertanyaan 
-Ikuti petunjuk untuk mendapatkan pesan rahasia. Kemudian flag didapatkan
-Flag: JarkomIT{8uK4n_S4n1ty_b1a5A_fQe1rmHCeu1QqtJM6Xq5jTuJ9Su5BTWwLQd0qPjRxfveVtS3O8h0UIKK}
+Menjadi jawaban untuk pertanyaan berikut:
+Ikuti petunjuk untuk mendapatkan pesan rahasia.
+
+Kemudian flag didapatkan
+Flag: ```JarkomIT{8uK4n_S4n1ty_b1a5A_fQe1rmHCeu1QqtJM6Xq5jTuJ9Su5BTWwLQd0qPjRxfveVtS3O8h0UIKK}```
 
 ### Pegawai Negeri Sebelah
 ![Screenshot (248)](https://github.com/user-attachments/assets/f16424d4-f5b8-4683-867f-ff87e3a0ca29)
@@ -50,12 +54,13 @@ Setelah itu membuka file di excel dan memasukkan sesuai kebutuhan pertanyaan.
 
 ![image](https://github.com/user-attachments/assets/bd5dcfb6-3a2e-4eb0-8c39-8943fcb6a27e)
 
-Flag: JarkomIT{Tum8eN_p45SnYa_Ku4t_B1aS4Nya_X27HTdzty5QRXrCJPeXTXOfSEL37jegV6lQaModIofD8iGf6fTRmM4h}
+Flag: ```JarkomIT{Tum8eN_p45SnYa_Ku4t_B1aS4Nya_X27HTdzty5QRXrCJPeXTXOfSEL37jegV6lQaModIofD8iGf6fTRmM4h}```
 
 ### FTP Login
 ![image](https://github.com/user-attachments/assets/480f85df-107e-4977-9047-7a110f7ac35a)\
 
-Apa username yang berhasil digunakan untuk login? ```sn34ky``` . Ini didapatkan dengan cara filter ```ftp.response.code == 230``` untuk menemukan yang berhasil, karena 230 menunjukkan login success.
+Apa username yang berhasil digunakan untuk login? ```sn34ky```.
+Ini didapatkan dengan cara filter ```ftp.response.code == 230``` untuk menemukan yang berhasil, karena 230 menunjukkan login success.
 
 ![image](https://github.com/user-attachments/assets/ea9a95ae-5737-4e18-9e0f-622e09b3feee)
 
@@ -98,31 +103,36 @@ Lalu ada pertanyaan:
 
 ![image](https://github.com/user-attachments/assets/79110f20-21b5-4298-8962-696d3bd63fbe)
 
-Jawaban: Nakhimov
+Jawaban: ```Nakhimov```
 
 Saya mendapat jawaban itu dengan melakukan follow-http stream terhadap packet:
 
-![Screenshot 2024-09-19 at 01 35 16](https://github.com/user-attachments/assets/4f1196d8-b8a8-46dd-b5d1-773b13e14535)
+![image](https://github.com/user-attachments/assets/4f1196d8-b8a8-46dd-b5d1-773b13e14535)
 
 Yang menunjukkan string seperti ini:
 
-![Screenshot 2024-09-18 at 20 20 53](https://github.com/user-attachments/assets/f4114fae-5db2-4aa4-8617-93fe481e6efe)
+![image](https://github.com/user-attachments/assets/f4114fae-5db2-4aa4-8617-93fe481e6efe)
 
 Selanjutnya muncul pertanyaan ke-2:
 
-![Screenshot 2024-09-18 at 20 37 20](https://github.com/user-attachments/assets/4c4832ca-6c25-4173-9284-33ff995d8e2a)
+![image](https://github.com/user-attachments/assets/4c4832ca-6c25-4173-9284-33ff995d8e2a)
 
 Saya melakukan filtering:
 
-![Screenshot 2024-09-19 at 01 35 16](https://github.com/user-attachments/assets/94ef7bbf-37d1-4fe2-a779-bdc599473519)
+![image](https://github.com/user-attachments/assets/94ef7bbf-37d1-4fe2-a779-bdc599473519)
 
 Saya cek beberapa packet HTTP dengan info POST dan index.php HTTP/1.1
 
 Lalu saya mendapati email dan password:
 
-![Screenshot 2024-09-18 at 20 36 42](https://github.com/user-attachments/assets/984ad809-c3d5-4a27-ae1e-eca7cf458bc4)
+![image](https://github.com/user-attachments/assets/984ad809-c3d5-4a27-ae1e-eca7cf458bc4)
 
-Setelah itu saya input email dan password ke dalam pertanyaan nc, lalu saya mendapatkan flag: JarkomIT{supp0rt_k0k_l3m4h_bg_knHDj2iRrQWdXNOuGb7Mm8EZ6G6HMjbdH7CSz0iuPfDdzUi6iejBG6}
+Setelah itu saya input email dan password ke dalam pertanyaan nc, lalu saya mendapatkan flag.
+
+Flag: ```JarkomIT{supp0rt_k0k_l3m4h_bg_knHDj2iRrQWdXNOuGb7Mm8EZ6G6HMjbdH7CSz0iuPfDdzUi6iejBG6}```
+***
+
+
 
 ### Soal EZ
 
@@ -154,24 +164,31 @@ Flag pun didapatkan
 ![image](https://github.com/user-attachments/assets/ebaa57f5-fe76-48c9-a818-f11b7755d897)
 ![image](https://github.com/user-attachments/assets/530ab2b0-b1f6-4cf5-90d6-01106729b4db)
 
-Apa IP Address dari korban? ```172.21.88.207```. Caranya adalah dengan mengecek destination. Di sini dicurigai karena banyak IP yang sama dan waktu yang berdekatan.
+Apa IP Address dari korban? ```172.21.88.207```.
+Caranya adalah dengan mengecek destination. Di sini saya mencurigai karena banyak IP yang sama dan waktu yang berdekatan.
 
 ![image](https://github.com/user-attachments/assets/d9f2b99e-f106-4ed5-9857-f38a4203d7b7)
 
-Apa port yang digunakan sebagai webserver? ```1917```. Caranya adalah dengan mengecek destination port di bawah.
+Apa port yang digunakan sebagai webserver? ```1917```.
+Caranya adalah dengan mengecek destination port di bawah.
 
 ![image](https://github.com/user-attachments/assets/7a5405ad-d0d3-45e9-b2aa-aa4f1266c531)
 
-Dimana endpoint yang terdapat login? ```/ww1.php```. Dengan cara filtering menggunakan ```frame contains "POST"``` lalu melakukan follow HTTP.
+Dimana endpoint yang terdapat login? ```/ww1.php```.
+Dengan cara filtering menggunakan ```frame contains "POST"``` lalu melakukan follow HTTP.
 
 ![image](https://github.com/user-attachments/assets/8460101f-408b-445e-8c5c-11abc7a2cc08)
 
-Tools apa yang digunakan oleh attacker? ```ffuf-v2.1.0-dev```. Nama asli dari tools bisa ditemukan bersamaan dengan endpoint di atas. Nama tools ```Fuzz Faster U Fool```, tetapi di sini perlu disingkat.
+Tools apa yang digunakan oleh attacker? ```ffuf-v2.1.0-dev```.
+Nama asli dari tools bisa ditemukan bersamaan dengan endpoint di atas. Nama tools ```Fuzz Faster U Fool```, tetapi di sini perlu disingkat menjadi ```ffuf-v2.1.0-dev```.
 
-Apa Kredensial yang berhasil digunakan oleh attacker untuk login? ```Redbaron:fly1ng4c3```. Untuk menemukannya bisa menggunakan filter ```frame contains "password"```
+Apa Kredensial yang berhasil digunakan oleh attacker untuk login? ```Redbaron:fly1ng4c3```.
+Untuk menemukan kredensial yang dimaksud bisa menggunakan filter ```frame contains "password"```
 
 ![image](https://github.com/user-attachments/assets/c09a46bd-1560-4e3c-95a5-2490d2d0ebe2)
 ![image](https://github.com/user-attachments/assets/6ef6c9ec-576b-4a13-ac12-3e9a3792cc9f)
+
+Pada langka ini flag didapatkan.
 
 Flag: ```JarkomIT{d34th_fr0m_th3_sky_gnavhIKKBQrJEfvUIfmkReZOCH1aR8ZIwidUScBKcbmxCdRONEXLWW1}```
 
@@ -181,21 +198,30 @@ Flag: ```JarkomIT{d34th_fr0m_th3_sky_gnavhIKKBQrJEfvUIfmkReZOCH1aR8ZIwidUScBKcbm
 ![image](https://github.com/user-attachments/assets/68e6bf78-74ad-44c3-a529-8d7c413236d3)
 ![image](https://github.com/user-attachments/assets/2299c59b-1b21-4efa-b4c2-5919908fa248)
 
-Apa IP address dari attacker? ```172.21.80.1```. Melakukan filtering ```http``` dan melihat IP yang menuju ke korban.
+Apa IP address dari attacker? ```172.21.80.1```.
+Untuk menemukan alamat IP dari penyerang, dapat dengan melakukan filtering ```http``` dan melihat IP yang menuju ke korban.
 
 ![image](https://github.com/user-attachments/assets/86a9dce6-037c-4959-b633-0590b545b8d3)
 
-Berapa total attempt dari bruteforce attacker? ```1917```. Filtering response ```ip.dst == 172.21.88.207 && http.request.method == "POST"``` yang mengarah ke IP korban.
+Berapa total attempt dari bruteforce attacker? ```1917```.
+Filtering response ```ip.dst == 172.21.88.207 && http.request.method == "POST"``` yang mengarah ke IP korban.
+Lalu mengecek pada bagian bawah wireshark. 
 
 ![image](https://github.com/user-attachments/assets/96d8fdb8-8cba-4d87-a13f-18287fc82939)
+
+Pada wireshark ditampilkan 1918 hasil, tetapi saya mencoba untuk memasukkan 1917 dan berhasil.
+
 ![image](https://github.com/user-attachments/assets/796dab61-1d6d-4abc-aaa5-7c44a1099b20)
 
-Apa nama file yang didownload oleh attacker setelah berhasil login ```Albatros.txt```. Filter ```ip.src == 172.21.80.1 && http.request.method == "GET"``` untuk melihat request ```GET``` yang dilakukan attacker. Lalu follow HTTP stream pada paket.
+Apa nama file yang didownload oleh attacker setelah berhasil login ```Albatros.txt```.
+Filter ```ip.src == 172.21.80.1 && http.request.method == "GET"``` untuk melihat request ```GET``` yang dilakukan attacker.
+Lalu follow HTTP stream pada paket.
 
 ![image](https://github.com/user-attachments/assets/f9b34cb8-c3e7-4eac-906f-8766833c330f)
 ![image](https://github.com/user-attachments/assets/32a80427-9d17-44e1-9aa2-ee9a5df4252d)
 
-Apa isi dari file yang disisipkan oleh attacker? ```Der Rote Kampfflieger```. Membuka file ```break.pcapng``` di Visual Studio Code dan mencari Albatros.
+Apa isi dari file yang disisipkan oleh attacker? ```Der Rote Kampfflieger```.
+Membuka file ```break.pcapng``` di Visual Studio Code dan mencari Albatros.
 
 ![image](https://github.com/user-attachments/assets/98c259af-30da-4d49-8132-19a1adf71561)
 
@@ -203,18 +229,26 @@ Flag: ```JarkomIT{th3_fly1ng_c1rcus_0f_w4r_gownfDVvIIiaBPo1fFhviboDH5StXEHd7pnMu
 
 ### Soal Rizzset
 ![image](https://github.com/user-attachments/assets/31c2d6c4-75d5-4b12-8d5e-fc76ad637bb7)
+
 ![image](https://github.com/user-attachments/assets/3ba771b4-dbc0-4813-9fb4-496ed193658f)
 
-Apa nama domain dari dns query pada log? ```www.its.ac.id```. Filtering sebagai berikut.
+Apa nama domain dari dns query pada log? ```www.its.ac.id```.
+Untuk menemukannya, dapat menggunakan filtering sebagai berikut.
 
 ![image](https://github.com/user-attachments/assets/473f7e58-5e60-4f06-9016-d0703250d58c)
 
-Berapa ip dari domain tersebut? ```103.94.189.5```. IP bisa ditemukan dengan melakukan ping.
+Berapa ip dari domain tersebut? ```103.94.189.5```.
+IP bisa ditemukan dengan melakukan ping. Saya melakukan ping ke ```www.its.ac.id``` menggunakan Command Prompt di Windows.
 
 ![image](https://github.com/user-attachments/assets/e8efd420-5bbd-43c2-b5a2-bf17d35038e8)
 
-Tuliskan JARM fingerprint yang dihasilkan dari domain tersebut. ```JARM: 2ad2ad16d2ad2ad22c2ad2ad2ad2ad74aaecca9f9c4a3303863dfee62b241e```. Untuk menemukan JARM adalah sebagai berikut:
+Tuliskan JARM fingerprint yang dihasilkan dari domain tersebut!
+
+```JARM: 2ad2ad16d2ad2ad22c2ad2ad2ad2ad74aaecca9f9c4a3303863dfee62b241e```.
+Untuk menemukan JARM adalah sebagai berikut:
 
 ![image](https://github.com/user-attachments/assets/fce49c32-af1c-4114-99bd-16520096793e)
 
 Flag: ```JarkomIT{Dn5_C0rR34t10n_OxZLHry3QvxnMI5vKZNrgYQ88r1zZANLcX1isAbvTelWoJQjjrbpHH1T5}```
+
+Demikian untuk laporan resmi praktikum Komunikasi Data dan Jaringan Komputer modul 1 dari kelompok IT02.
